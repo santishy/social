@@ -21,7 +21,7 @@ class LoginTest extends DuskTestCase
         $this->browse(function (Browser $browser) {
             $browser->visit('/login')
                     ->type('email','santi_shy@hotmail.com')
-                    ->type('contraseña','password')
+                    ->type('password','password')
                     ->press('#login-btn')
                     ->assertAuthenticated();
         });
